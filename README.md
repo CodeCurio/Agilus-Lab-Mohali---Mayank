@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Agilus Diagnostics Lab Mohali - Website
 
-## Getting Started
+A complete, production-ready Next.js website for Agilus Diagnostics Lab Mohali.
 
-First, run the development server:
+## Features
 
+- **Modern Design**: Glassmorphism, mobile-first, responsive UI using Tailwind CSS.
+- **Booking System**: Custom booking flow with validation and email notifications.
+- **SEO Optimized**: Local SEO for Mohali/Chandigarh, Schema Markup, Sitemap, and Metadata.
+- **Package Catalog**: Filterable list of diagnostic packages with detailed pages.
+- **Admin Stub**: Basic admin dashboard to view bookings.
+- **Performance**: Optimized images, fonts, and code splitting.
+
+## Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS, Framer Motion
+- **Forms**: React Hook Form, Zod
+- **Email**: Nodemailer
+
+## Setup & Deployment
+
+### 1. Clone & Install
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repo-url>
+cd agilus-lab-mohali
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Environment Variables
+Create a `.env.local` file with the following variables:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```env
+# Email Configuration (for booking notifications)
+SMTP_HOST=smtp.example.com
+SMTP_PORT=587
+SMTP_USER=your-email@example.com
+SMTP_PASS=your-password
+SMTP_FROM="Agilus Mohali <bookings@agilusmohali.com>"
+ADMIN_EMAIL=admin@agilusmohali.com
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Admin Access
+ADMIN_PASSWORD=admin123
+```
 
-## Learn More
+### 3. Run Locally
+```bash
+npm run dev
+```
+Visit `http://localhost:3000`.
 
-To learn more about Next.js, take a look at the following resources:
+### 4. Build for Production
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment on Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push code to GitHub.
+2. Import project in Vercel.
+3. Add Environment Variables in Vercel Project Settings.
+4. Deploy.
 
-## Deploy on Vercel
+## Customization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Colors**: Edit `tailwind.config.ts` -> `theme.extend.colors.brand`.
+- **Logo**: Replace `public/logo.png`.
+- **Packages**: Edit `src/lib/packages.ts`.
+- **Business Info**: Edit `src/lib/constants.ts`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## SEO & Analytics
+
+- **Sitemap**: Automatically generated at `/sitemap.xml`.
+- **Robots**: Automatically generated at `/robots.txt`.
+- **Schema**: JSON-LD implemented on Home and Package pages.
+
+## Testing
+
+Run the build command to verify type safety and build success:
+```bash
+npm run build
+```
