@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const faqs = [
     {
         question: "How do I book a home collection?",
-        answer: "You can book a home collection by calling us at 9115459115 or by filling out the booking form on our website. Our phlebotomist will visit your home at your preferred time."
+        answer: "You can book a home collection by calling us at +91 75289 70484 or by filling out the booking form on our website. Our phlebotomist will visit your home at your preferred time."
     },
     {
         question: "When will I get my reports?",

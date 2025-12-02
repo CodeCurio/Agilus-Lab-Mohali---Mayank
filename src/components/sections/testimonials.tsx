@@ -19,7 +19,7 @@ const testimonials = [
     {
         id: 3,
         name: "Amit Singh",
-        location: "Mohali",
+        location: "Mohali, Sector 69",
         text: "Best diagnostic lab in Mohali. Accurate results and affordable packages. The home collection facility is a lifesaver.",
         rating: 5,
     },

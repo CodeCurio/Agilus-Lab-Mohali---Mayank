@@ -9,7 +9,7 @@ import { MapPin, Phone, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "Contact Us | Agilus Diagnostics Mohali",
-    description: "Contact Agilus Diagnostics Lab Mohali for home collection bookings and queries. Call 9115459115.",
+    description: "Contact Agilus Diagnostics Lab Mohali for home collection bookings and queries. Call +91 75289 70484.",
 };
 
 export default function ContactPage() {
