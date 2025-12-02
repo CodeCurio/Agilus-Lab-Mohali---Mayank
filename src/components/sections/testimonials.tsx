@@ -5,7 +5,7 @@ const testimonials = [
     {
         id: 1,
         name: "Rajesh Kumar",
-        location: "Mohali, Sector 69",
+        location: "Sector 69, Mohali",
         text: "Excellent service! The phlebotomist arrived on time for home collection. The report was delivered by email the same evening. Highly recommended.",
         rating: 5,
     },
@@ -19,7 +19,7 @@ const testimonials = [
     {
         id: 3,
         name: "Amit Singh",
-        location: "Mohali, Sector 69",
+        location: "Sector 69, Mohali",
         text: "Best diagnostic lab in Mohali. Accurate results and affordable packages. The home collection facility is a lifesaver.",
         rating: 5,
     },
